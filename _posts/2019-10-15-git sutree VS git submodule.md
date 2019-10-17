@@ -12,7 +12,9 @@ tags:
 
 
 
-##git submodule & git subtree
+
+
+# git submodule & git subtree
 
 git submodule 和 git subtree 是 git 内嵌的 ‘包依赖’ 功能模块。git subtree没有出现之前，git submodule是Git官方推荐的子项目管理方案，在git 1.5.2版本之后。git subtree出现了，相同的，git subtree成了官方努力推荐的子模块管理方案
 
@@ -91,11 +93,18 @@ git submodule 和 git subtree 是 git 内嵌的 ‘包依赖’ 功能模块。g
 - 每个提交都需要重新计算，因此每次推送都需要把主工程的所有的提交都计算一遍
 - 每次push都是重新计算，导致子项目本地和远端的提交记录不一致，关键还没有共同的父级，导致git无法自动解决冲突，需要完全手动修改
 
+注：幸运的是，我们目前的工作流很轻易就避开了这个问题，哈哈哈，因为子项目不是在主项目中维护的
+
+
+
 #### 为什么我们要用git submodule 替换掉 git subtree
 
 ------
 
+- git submodule对于新手来说的使用成本高
+- 目前的团队协作方式是：子项目 X 由小组B维护，主项目 Y 小组A维护，并且子项目，主项目都是有多个并行分支，dev、test、pre。最坑爹的地方，子项目的分支要对应主项目的分支，每次切分支，需要git submodule update，
 
+其实，我们最最希望，对于项目A的同学来说，不需要关注子项目。用git subtree替换git submodule之后的工作流和没有引用子库的工作流是一样，原因就是git submodule是copy而不是引用，我们无需关注任何子项目
 
 
 
