@@ -1,51 +1,62 @@
 ---
 layout:     post
-title:      Python基础01
-subtitle:   Python Learn
-date:       2019-05-31
+title:      git submodule and git subtree
+subtitle:   git submodule and git subtree
+date:       2019-10-16
 author:     Stackjolin
 header-img: img/post-bg-kuaidi.jpg
 catalog: true
 tags:
-    - Python
+    - Git
 ---
 
-##OpenGL基础
 
-渲染模式：
 
-- 核心模式
-- 立即渲染模式
+##git submodule & git subtree
 
-OpenGL本身是一个巨大的状态机，OpenGL的状态机被称为OpenGL的上下文
-
-GLEW：视窗API
-
-GLAD
-
-GLSL
-
-指定OpenGL如何解释顶点数据
-
-纹理环绕方式
-
-纹理过滤
-
-- 临近过滤
-- 线性过滤
-
-多级渐远纹理
+git submodule 和 git subtree 是 git 内嵌的 ‘包依赖’ 功能模块。git subtree没有出现之前，git submodule是Git官方推荐的子项目管理方案，在git 1.5.2版本之后。git subtree出现了，相同的，git subtree成了官方努力推荐的子模块管理方案
 
 
 
-坐标系统：在某些坐标系统中，进行某些操作会比较方便
+#### git submodule原理
 
-- 局部空间(物体空间)
-- 世界空间
-- 观察空间(视觉空间)
-- 裁剪空间
-- 屏幕空间
+------
 
 
 
-向量操作
+
+
+#### git submodule的使用
+
+-----
+
+
+
+
+
+#### git subtree原理
+
+-------
+
+
+
+
+
+#### git subtree的使用
+
+-----
+
+
+
+#### 为什么我们要用git submodule 替换掉 git subtree
+
+------
+
+
+
+
+
+#### git submodule VS git subtree
+
+-----
+
