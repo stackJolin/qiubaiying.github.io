@@ -32,7 +32,9 @@ git submodule 和 git subtree 是 git 内嵌的 ‘包依赖’ 功能模块。g
 
 - 子模块的游离Head更新了
 
-  本地游离子模块游离的Head更新，一般是开发者本地对子模块做了修改导致的。如果开发者是误改，可以reset掉错误的修改。如果开发者确实需要修改，那么在子模块的git环境下，git pull，git commit提交到子模块的远端仓库，并且回到主项目中的git环境下，执行`git submodule update --remote`
+  本地游离子模块游离的Head更新，一般是开发者本地对子模块做了修改导致的。如果开发者是误改，可以`git reset --hard <未做改动之前的commitid> `掉错误的修改。如果开发者确实需要修改，那么在子模块的git环境下，git pull，git commit提交到子模块的远端仓库，并且回到主项目中的git环境下，执行`git submodule update --remote`
+
+  `注：如果还是无法解决不一致的问题，可以删除子项目，并重新添加`
 
 - 父模块保存的子模块的Commit ID更新了（我们最常遇到的问题）
 
@@ -122,3 +124,32 @@ git submodule 和 git subtree 是 git 内嵌的 ‘包依赖’ 功能模块。g
 
 -----
 
+git subtree和git submodule 最直接的不同是：git subtree是对子项目的源码的copy，而git submodule是对子项目的commit指针的引用。正是基于这个原因
+
+<font color=000000>
+
+git submodule 
+
+- git submodule每次都要执行git submodule update
+
+- git submodule对于子模块嵌套更加灵活
+
+  `git submodule update --recursive`
+
+- 同步代码比较麻烦
+
+- 对于git新手来说，冲突解决贼麻烦。
+
+- 代码的重复性很高，占用磁盘。各个子模块的common和dep体积很大
+
+git subtree
+
+- 相对于git submodule来说，git subtree在模块管理上存在的
+
+</font>
+
+###### 相关文献
+
+- https://codewinsarguments.co/2016/05/01/git-submodules-vs-git-subtrees/
+- https://tech.youzan.com/git-subtree/
+- [http://program-notes.com/2018/08/18/git-submodule-%E7%9A%84%E5%8E%9F%E7%90%86/](http://program-notes.com/2018/08/18/git-submodule-的原理/)
