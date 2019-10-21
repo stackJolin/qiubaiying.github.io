@@ -62,7 +62,7 @@ git submodule 和 git subtree 是 git 内嵌的 ‘包依赖’ 功能模块。g
 
 -------
 
-
+相对于git submodule来说，主项目对于子模块仅仅是对源码的copy，比较简单，易用。正因为简单，所以在分支、依赖管理上，git subtree相对于git subtree来说，存在天然的劣势
 
 
 
@@ -126,8 +126,6 @@ git submodule 和 git subtree 是 git 内嵌的 ‘包依赖’ 功能模块。g
 
 git subtree和git submodule 最直接的不同是：git subtree是对子项目的源码的copy，而git submodule是对子项目的commit指针的引用。正是基于这个原因
 
-<font color=000000>
-
 git submodule 
 
 - git submodule每次都要执行git submodule update
@@ -144,9 +142,18 @@ git submodule
 
 git subtree
 
-- 相对于git submodule来说，git subtree在模块管理上存在的
+- 相对于git submodule来说，git subtree在模块管理上劣势：
 
-</font>
+  - 代码提交速度慢，蜗牛速度(原因见上)
+
+  - 切换分支的操作，那叫一个傻逼：删除重新添加。
+
+    ```
+    git rm -rf
+    git subtree add
+    ```
+
+    
 
 ###### 相关文献
 
