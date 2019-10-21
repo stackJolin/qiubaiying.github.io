@@ -24,9 +24,19 @@ git submodule 和 git subtree 是 git 内嵌的 ‘包依赖’ 功能模块。g
 
 ------
 
+主项目A保存子模块B的某次commit，用以表示使用主项目使用子项目的那个版本
 
+如果主项目保存的子模块的commit和子项目的游离的Head不一致，主项目的git status就会显示出这个差异
 
+有两种情况会导致主项目保存的子模块的commit和子模块的Head不一致:
 
+- 子模块的游离Head更新了
+
+  本地游离子模块游离的Head更新，一般是开发者本地对子模块做了修改导致的。如果开发者是误改，可以reset掉错误的修改。如果开发者确实需要修改，那么在子模块的git环境下，git pull，git commit提交到子模块的远端仓库，并且回到主项目中的git环境下，执行`git submodule update --remote`
+
+- 父模块保存的子模块的Commit ID更新了（我们最常遇到的问题）
+
+  出现这种情况的原因，一般是其他人更新了主项目中存储的子模块的commit Id，当你pull远端代码之后，就会互相这种现象。需要执行`git submodule update`，执行该命令后，子模块中的游离Head就会指向和主项目中一致的commit Id
 
 #### git submodule的使用
 
