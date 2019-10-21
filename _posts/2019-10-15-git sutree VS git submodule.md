@@ -46,7 +46,23 @@ git submodule 和 git subtree 是 git 内嵌的 ‘包依赖’ 功能模块。g
 
 - 添加引用
 
-- 删除子项目
+  `git submodule add -f 'submodule.git' '本地路径'`
+
+- 更新元旦主项目关于子模块的引用
+
+  `git status`查看子模块有没有变化
+
+  如果有变化，执行
+
+  `git submodule udpate`
+
+- 本地修改子模块后，主项目同步更新
+
+  子模块环境下，git add，git commit -m ''， git push,
+
+  回到主工程下，git submodule update —remote
+
+- 清理子项目
 
   ```
   1. 删除.submodule文件
@@ -159,4 +175,3 @@ git subtree
 
 - https://codewinsarguments.co/2016/05/01/git-submodules-vs-git-subtrees/
 - https://tech.youzan.com/git-subtree/
-- [http://program-notes.com/2018/08/18/git-submodule-%E7%9A%84%E5%8E%9F%E7%90%86/](http://program-notes.com/2018/08/18/git-submodule-的原理/)
