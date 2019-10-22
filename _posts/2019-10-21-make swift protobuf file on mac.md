@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      git submodule and git subtree
-subtitle:   git submodule and git subtree
+title:      make swift protobuf file
+subtitle:   make swift protobuf file
 date:       2019-10-16
 author:     Stackjolin
 header-img: img/post-bg-kuaidi.jpg
@@ -49,7 +49,7 @@ tags:
 
 
 
-#### protobuf in swift
+#### 生成protoc-gen-swift可执行文件
 
 ------
 
@@ -75,4 +75,26 @@ tags:
 
 - 执行万上面的命令后，在.build/release目录下会生成一个可执行文件'protoc-gen-swfit'，将改文件copy到 `usr/local/bin`目录下
 
-- 命令行执行如下命令即可生成swift的版本的pb文件
+注：可以通过brew安装，简单的执行命令`brew install swift-protobuf`
+
+#### 生成protoc-gen-swiftgrpc可执行文件
+
+------
+
+```
+git clone git clone https://github.com/grpc/grpc-swift.git
+cd grpc-swift
+make plugin
+```
+
+执行完上面命令会生成一个文件protoc-gen-swift，将该文件copy到 `usr/local/bin`目录下
+
+
+
+#### 根据proto文件，生成swift版本的代码
+
+-----
+
+```
+protoc mockcsclient_mockcsclient.proto --swift_out=commen --swiftgrpc_out=Client=true,Server=false:commen
+```
