@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>19B88</string>
+	<string>18F132</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -13,7 +13,7 @@
 	<key>CFBundleIconName</key>
 	<string>AppIcon</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.giantthong.mac.dev</string>
+	<string>com.windtechnology.ccmac</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -21,7 +21,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>3.0</string>
+	<string>2.0</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>MacOSX</string>
@@ -31,17 +31,17 @@
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>11B500</string>
+	<string>11A420a</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>19B89</string>
+	<string>19A547</string>
 	<key>DTSDKName</key>
 	<string>macosx10.15</string>
 	<key>DTXcode</key>
-	<string>1120</string>
+	<string>1100</string>
 	<key>DTXcodeBuild</key>
-	<string>11B500</string>
+	<string>11A420a</string>
 	<key>Fabric</key>
 	<dict>
 		<key>APIKey</key>
@@ -73,8 +73,6 @@
 	<string>NSApplication</string>
 	<key>NSUserNotificationAlertStyle</key>
 	<string>alert</string>
-	<key>SUFeedURL</key>
-	<string>https://stackjolin.github.io/appcast.xml</string>
 	<key>SUPublicEDKey</key>
 	<string>gFC+Sg2NZrE0zA+b/nuzn71BgigFLnfNTJ8IvMqejTw=</string>
 </dict>
