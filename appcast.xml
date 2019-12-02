@@ -7,7 +7,7 @@
         <item>
             <title>Version 1.4.14</title>
             <sparkle:releaseNotesLink>
-                https://www.baidu.com
+                
             </sparkle:releaseNotesLink>
             <pubDate>Wed, 10 Apr 2019 19:58:11 +0000</pubDate>
             <enclosure
@@ -16,7 +16,7 @@
                 sparkle:version="2019.05.04"
                 length="19823131"
                 type="application/octet-stream"
-                sparkle:dsaSignature="z0ZMLCw6gjoUj+gjFcxSyXjvpBWOFrpeKpmD1WNwS+KSErWUXhzG3YhLWjqxpjazXrROF1+iMXUKpWoAF1ScBQ=="
+                sparkle:dsaSignature="xdLF1Klbq9OBs0wjKnkR8Ii7wIuPjW5hqvVvzYIRrWx6NuckbLHhrVTY2GL1CcsHBdeYZ0/DkzFbFi6Pu4qtDw=="
             />
             <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
         </item>
