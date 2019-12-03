@@ -1,24 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>CSC</title>
-        <description>Most recent changes with links to updates.</description>
-        <language>en</language>
         <item>
-            <title>Version 1.4.14</title>
-            <sparkle:releaseNotesLink>
-                
-            </sparkle:releaseNotesLink>
-            <pubDate>Wed, 10 Apr 2019 19:58:11 +0000</pubDate>
-            <enclosure
-                url="https://stackjolin.github.io/CSC.zip"
-                sparkle:shortVersionString="1.4.14"
-                sparkle:version="2019.05.04"
-                length="19823131"
-                type="application/octet-stream"
-                sparkle:dsaSignature="xdLF1Klbq9OBs0wjKnkR8Ii7wIuPjW5hqvVvzYIRrWx6NuckbLHhrVTY2GL1CcsHBdeYZ0/DkzFbFi6Pu4qtDw=="
-            />
-            <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+            <title>2.0</title>
+            <pubDate>周一, 02 12月 2019 21:20:12 +0800</pubDate>
+            <sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
+            <enclosure url="https://stackjolin.github.io/CSCZip/CSC.zip" sparkle:version="2.0" sparkle:shortVersionString="2.0" length="15602271" type="application/octet-stream" sparkle:edSignature="xdLF1Klbq9OBs0wjKnkR8Ii7wIuPjW5hqvVvzYIRrWx6NuckbLHhrVTY2GL1CcsHBdeYZ0/DkzFbFi6Pu4qtDw=="/>
         </item>
     </channel>
 </rss>
