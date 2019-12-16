@@ -6,7 +6,7 @@
             <title>2.0</title>
             <pubDate>周一, 02 12月 2019 21:20:12 +0800</pubDate>
             <sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
-            <enclosure url="https://stackjolin.github.io/CSCZip/CSC.zip" sparkle:version="2.0" sparkle:shortVersionString="2.0" length="15602271" type="application/octet-stream" sparkle:edSignature="xdLF1Klbq9OBs0wjKnkR8Ii7wIuPjW5hqvVvzYIRrWx6NuckbLHhrVTY2GL1CcsHBdeYZ0/DkzFbFi6Pu4qtDw=="/>
+            <enclosure url="CSC.zip" sparkle:version="2.0" sparkle:shortVersionString="2.0" length="15602271" type="application/octet-stream" sparkle:edSignature="xdLF1Klbq9OBs0wjKnkR8Ii7wIuPjW5hqvVvzYIRrWx6NuckbLHhrVTY2GL1CcsHBdeYZ0/DkzFbFi6Pu4qtDw=="/>
         </item>
     </channel>
 </rss>
