@@ -3,10 +3,10 @@
     <channel>
         <title>CSC</title>
         <item>
-            <title>1.0</title>
-            <pubDate>周三, 18 12月 2019 15:53:23 +0800</pubDate>
+            <title>2.0</title>
+            <pubDate>周三, 18 12月 2019 18:36:18 +0800</pubDate>
             <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
-            <enclosure url="CSCZip/CSC.zip" sparkle:version="1.0" sparkle:shortVersionString="1.0" length="16678783" type="application/octet-stream" sparkle:edSignature="Kt+ARcuK/i8wR0KUZby8ITpb/OeerpO+p2rkn45CO5xmBKyA+CVpI2Lulb1+S+4lVQQzLapHrsnSQJukNLnnCg=="/>
+            <enclosure url="http://10.129.100.55:9999/CSCZip/CSC.zip" sparkle:version="2.0" sparkle:shortVersionString="2.0" length="16679865" type="application/octet-stream" sparkle:edSignature="DYCi46GlDKRdR5aBI2aZJ3TL7fu9cLm5y/uUBLXxkT28+l4zR0f8lwUO8+ltCnt9DN1L4+bV449zkGosT8wPAg=="/>
         </item>
     </channel>
 </rss>
