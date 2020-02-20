@@ -3,7 +3,6 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <script type="text/javascript">
-
         function JSFunction(parameter)
         {
             document.getElementById('view').value = parameter;
@@ -15,10 +14,17 @@
         {
             var consoleValue = document.getElementById('view').value;
             var parameter = {'message':consoleValue};
-            var result = cscwin.getToken();
+            var result = cscwin.updateUserInfo();
             document.getElementById('view').value = result;
         }
         
+        function CallSwift1()
+        {
+            var consoleValue = document.getElementById('view').value;
+            var parameter = {'message':consoleValue};
+            var result = cscwin1.getToken();
+            document.getElementById('view').value = result;
+        }
         </script>
 </head>
 
@@ -28,7 +34,7 @@
         <textarea style="width: 100%" id="view" rows=5 cols=24>
             Hello World
         </textarea>
-        <input type=button value="发送消息" onClick="CallSwift();">
+        <input type=button value="更新配置信息" onClick="CallSwift();">
     </form>
     <input type="file" id="fileInput" allowdirs multiple />
 </body>
